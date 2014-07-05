@@ -1,10 +1,10 @@
 {
-  "name": "Darkside-Moon",
+  "name": "Dark-Watchmen",
   "theme": "syntax",
   "version": "1.0.0",
   "private": false,
-  "description": "sanjaypojo's custom theme inspired by Dayle Rees' darkside",
-  "repository": "https://github.com/sanjaypojo/darkside-moon",
+  "description": "sanjaypojo's Watchmen-esque atom theme",
+  "repository": "https://github.com/sanjaypojo/atom-dark-watchmen",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
