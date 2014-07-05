@@ -1,6 +1,6 @@
 @import "ui-variables";
 
-@base03: #222324;
+@base03: @dsm-black;
 @base02: #073642;
 @base01: #586e75;
 @base00: #657b83;
@@ -18,10 +18,16 @@
 @cyan: #2aa198;
 @green: #859900;
 
+// My colors
+@dsm-grey: #494B4D;
+@dsm-white: #BABABA;
+@dsm-black: #222324;
+@dsm-purple: #8E69C9;
+@dsm-green: #68C244;
 
 .editor-colors {
-  background-color: #222324;
-  color: #BABABA;
+  background-color: @dsm-black;
+  color: @dsm-white;
 }
 
 .editor {
@@ -31,7 +37,7 @@
   }
 
   .gutter {
-    background-color: #222324;
+    background-color: @dsm-black;
   }
 
   .gutter .line-number {
@@ -49,7 +55,7 @@
   }
 
   .selection .region {
-    background-color: #FF4E50;
+    background-color: @dsm-grey;
     color: #ffffff;
   }
 
@@ -58,21 +64,26 @@
   }
 }
 
-.bracket-matcher {
-  background-color: #E8341C;
-  opacity: 0.4;
-}
+// .bracket-matcher {
+//   background-color: #F2D42C;
+//   opacity: 1;
+//   border-radius: 10px;
+// }
 
 .comment {
-  color: #494B4D;
+  color: @dsm-grey;
 }
 
 .entity {
-  color: #68C244;
+  color: @dsm-purple;
+}
+
+.entity.function {
+  color: @dsm-green;
 }
 
 .entity.name.type.class {
-  color: #BABABA;
+  color: @dsm-purple;
 }
 
 .keyword {
@@ -92,20 +103,27 @@
 
   &.numeric,
   &.boolean {
-    color: #8E69C9;
+    color: @dsm-white;
   }
 }
 
 .variable {
-  color: #BABABA;
+  color: @dsm-white;
+  &.assignment {
+    color: @dsm-green;
+  }
+}
+
+.parameter {
+  color: @dsm-purple;
 }
 
 .delimiter, .brace {
-  color: #BABABA;
+  color: @dsm-white;
 }
 
 .delimiter.period {
-  color: #E8341C;
+  color: @dsm-white;
 }
 
 .invalid.deprecated {
@@ -144,4 +162,8 @@
 
 .entity.other.attribute-name {
   color: #E8341C;
+}
+
+.wrap-guide {
+  background-color: @dsm-grey;
 }

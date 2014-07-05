@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": false,
   "description": "sanjaypojo's custom theme inspired by Dayle Rees' darkside",
-  "repository": "https://github.com/sanjaypojo/colour-schemes",
+  "repository": "https://github.com/sanjaypojo/darkside-moon",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
