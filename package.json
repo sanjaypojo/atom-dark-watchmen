@@ -1,7 +1,7 @@
 {
   "name": "Watchmenesque-Dark",
   "theme": "syntax",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": false,
   "description": "A dark and Watchmen-esque syntax theme for atom",
   "repository": "https://github.com/sanjaypojo/atom-dark-watchmen",
