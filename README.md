@@ -1,3 +1,4 @@
 A dark syntax theme for atom, inspired by the bold yellow in Watchmen.
+Happy to incorporate your feedback, just mark it as an issue, thanks!
 
 ![Code highlighting example](https://raw.githubusercontent.com/sanjaypojo/atom-dark-watchmen/master/watchmenesque.png)
