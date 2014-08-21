@@ -41,7 +41,13 @@
   color: @syntax-text-color;
 }
 
-.editor {
+.markdown-preview {
+  pre.editor-colors {
+    background-color: @syntax-background-color;
+  }
+}
+
+.editor, pre.editor-colors {
   .invisible-character {
     color: @syntax-invisible-character-color;
   }
@@ -218,15 +224,6 @@
       .entity {
         color: @dsm-purple;
       }
-    }
-  }
-}
-
-.markdown-preview {
-  pre.editor-colors {
-    background-color: @dsm-black;
-    code {
-      color: @dsm-white;
     }
   }
 }
