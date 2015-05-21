@@ -36,21 +36,21 @@
 @syntax-color-modified: #E6DB74;
 @syntax-color-removed: @dsm-red;
 
-.editor-colors {
+atom-text-editor::shadow, :host {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
 .markdown-preview {
-  pre.editor-colors {
+  pre {
     background-color: @syntax-background-color;
   }
 }
 
-.editor, pre.editor-colors {
+atom-text-editor::shadow, :host {
   .invisible-character {
-    color: @syntax-invisible-character-color;
-  }
+      color: @syntax-invisible-character-color;
+    }
 
   .indent-guide {
     color: @syntax-indent-guide-color;
@@ -58,6 +58,7 @@
 
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
+    color: @syntax-wrap-guide-color;
   }
 
   .gutter {
