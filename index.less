@@ -87,7 +87,7 @@ atom-text-editor {
     background-color: darken(@dsm-grey, 5%);
   }
 
-  .search-results .marker .region {
+  .search-results .syntax--marker .region {
     background-color: transparent;
     border: 1px solid @syntax-result-marker-color;
   }
@@ -121,7 +121,7 @@ atom-text-editor {
     color: @dsm-orange;
   }
 
-  .syntax {
+  .syntax--syntax {
     color: @dsm-red;
   }
 
@@ -154,11 +154,11 @@ atom-text-editor {
     color: @dsm-green;
   }
 
-  .syntax--entity.syntax--name.tag {
+  .syntax--entity.syntax--name.syntax--tag {
     color: @dsm-red;
   }
 
-  .syntax--entity.other.syntax--attribute-name {
+  .syntax--entity.syntax--other.syntax--attribute-name {
     color: @dsm-green;
   }
 
@@ -166,7 +166,7 @@ atom-text-editor {
     color: @dsm-blue;
   }
 
-  .syntax--support.constant {
+  .syntax--support.syntax--constant {
     color: @dsm-blue;
   }
 
@@ -183,7 +183,7 @@ atom-text-editor {
 
   .syntax--variable.syntax--assignment {
     color: @dsm-green;
-    .punctuation {
+    .syntax--punctuation {
       color: @dsm-orange;
     }
   }
@@ -223,7 +223,7 @@ atom-text-editor {
       color: @dsm-blue;
     }
 
-    .syntax--variable.list {
+    .syntax--variable.syntax--list {
       color: @dsm-red;
       font-weight: bold;
     }
