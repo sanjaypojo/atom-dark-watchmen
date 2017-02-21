@@ -36,20 +36,11 @@
 @syntax-color-modified: #E6DB74;
 @syntax-color-removed: @dsm-red;
 
+
 atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 
-  .markdown-preview {
-    background-color: @syntax-background-color;
-    color: @syntax-text-color;
-    pre {
-      background-color: lighten(@syntax-background-color, 10%);
-    }
-  }
-}
-
-atom-text-editor {
   .invisible-character {
       color: @syntax-invisible-character-color;
     }
@@ -84,18 +75,18 @@ atom-text-editor {
   }
 
   .selection .region {
-    background-color: darken(@dsm-grey, 5%);
+    background-color: darken(@syntax-selection-color, 5%);
   }
 
-  .search-results .syntax--marker .region {
-    background-color: transparent;
-    border: 1px solid @syntax-result-marker-color;
-  }
-
-  .search-results .syntax--marker.current-result .region {
-    border: 1px solid @syntax-result-marker-color-selected;
-  }
-
+  // .search-results .syntax--marker .region {
+  //   background-color: transparent;
+  //   border: 1px solid @syntax-result-marker-color;
+  // }
+  //
+  // .search-results .syntax--marker.current-result .region {
+  //   border: 1px solid @syntax-result-marker-color-selected;
+  // }
+  //
   .syntax--comment {
     color: lighten(@dsm-grey, 5%);
   }
