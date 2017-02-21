@@ -36,18 +36,20 @@
 @syntax-color-modified: #E6DB74;
 @syntax-color-removed: @dsm-red;
 
-atom-text-editor::shadow, :host {
+atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
 .markdown-preview {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
   pre {
-    background-color: @syntax-background-color;
+    background-color: lighten(@syntax-background-color, 10%);
   }
 }
 
-atom-text-editor::shadow, :host {
+atom-text-editor {
   .invisible-character {
       color: @syntax-invisible-character-color;
     }
