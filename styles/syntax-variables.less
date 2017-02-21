@@ -1,0 +1,37 @@
+// Brand Colors
+@dsm-grey: #494B4D;
+@dsm-white: #BABABA;
+@dsm-black: #222324;
+@dsm-purple: #8E69C9;
+@dsm-green: #68C244;
+@dsm-blue: lighten(#336699, 20%);
+@dsm-orange: #F08D24;
+@dsm-red: #E8341C;
+@dsm-yellow: #F2D42C;
+
+// General colors
+@syntax-text-color: @dsm-white;
+@syntax-cursor-color: #F8F8F0;
+@syntax-selection-color: @dsm-grey;
+@syntax-background-color: @dsm-black;
+
+// Guide colors
+@syntax-wrap-guide-color: rgba(255, 255, 255, .1);
+@syntax-indent-guide-color: rgba(255, 255, 255, .15);
+@syntax-invisible-character-color: rgba(197, 200, 198, .2);
+
+// For find and replace markers
+@syntax-result-marker-color: #888;
+@syntax-result-marker-color-selected: white;
+
+// Gutter colors
+@syntax-gutter-text-color: @syntax-text-color;
+@syntax-gutter-text-color-selected: @syntax-gutter-text-color;
+@syntax-gutter-background-color: lighten(@syntax-background-color, 3%);
+@syntax-gutter-background-color-selected: @syntax-selection-color;
+
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed: #ffd569;
+@syntax-color-added: #529b2f;
+@syntax-color-modified: #E6DB74;
+@syntax-color-removed: @dsm-red;
